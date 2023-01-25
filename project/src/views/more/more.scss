@@ -1,0 +1,423 @@
+.more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 870px;
+
+    h1 {
+      width: 100%;
+      font-family: tungstenBook;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 34px;
+      color: #3a3a40;
+      letter-spacing: -0.1em;
+      margin: 0px;
+      padding: 48px 0px 25px;
+    }
+
+    hgroup {
+      width: 100%;
+      font-family: tungstenBook;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: #3a3a40;
+      line-height: 26px;
+      letter-spacing: -0.08em;
+      text-transform: uppercase;
+      margin: 0px 0px 8px;
+    }
+
+    .col {
+      display: grid;
+      grid-column: 3 / auto;
+      grid-template-columns: repeat(3, 1fr);
+      -webkit-box-align: start;
+      align-items: start;
+      gap: 16px;
+      margin-bottom: 40px;
+
+      aside {
+        width: 277px;
+        height: 44px;
+        background-color: #fff;
+        border-radius: 6px 6px 20px 6px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #fff;
+        padding-left: 10px;
+        font-family: roobertTrialRegular;
+        font-size: 11px;
+        font-weight: 400;
+        color: #3a3a40;
+        position: relative;
+
+        span {
+          display: flex;
+          align-items: center;
+          i {
+            margin-right: 10px;
+            font-size: 20px;
+            vertical-align: top;
+          }
+          .logo {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            i {
+              position: absolute;
+              top: 2px;
+              left: 5px;
+              font-size: 30px;
+              font-weight: bold;
+            }
+            i:nth-of-type(2) {
+              font-size: 1vmin;
+              top: 20px;
+              left: 16px;
+            }
+          }
+        }
+
+        b {
+          font-size: 14px;
+          margin-right: 20px;
+          margin-top: 3px;
+          .anticon {
+            vertical-align: middle;
+          }
+        }
+        .isShow {
+          display: none;
+        }
+      }
+
+      aside:hover {
+        border: 1px solid #e95045;
+      }
+    }
+
+    .audit {
+      aside {
+        width: 870px;
+      }
+    }
+
+    .setting {
+      article {
+        width: 425px;
+        height: 142px;
+        background-color: #fff;
+        border-radius: 6px 6px 20px 6px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #fff;
+        padding-left: 10px;
+        font-family: roobertTrialRegular;
+        font-size: 11px;
+        font-weight: 400;
+        color: #3a3a40;
+
+        .left {
+          width: 60%;
+          display: flex;
+          align-items: center;
+
+          i {
+            margin-right: 10px;
+            font-size: 20px;
+            vertical-align: top;
+          }
+        }
+
+        .right {
+          width: 32%;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+
+          figure {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            margin-top: -20px;
+            color: #8b8b8d;
+
+            .ant-switch {
+              width: 40px;
+              height: 26px;
+              background: #fff;
+              border: 1px solid #aba9a5;
+              margin-right: 10px;
+
+              > div {
+                top: 3px;
+              }
+
+              > div::before {
+                background: #3a3a40;
+              }
+            }
+
+            .ant-switch-checked {
+              background: #e95045;
+              border: 1px solid #e95045;
+            }
+          }
+
+          figcaption {
+            margin-left: 10px;
+
+            .ant-checkbox {
+              margin: 8px;
+              border-radius: 50%;
+
+              .ant-checkbox-inner {
+                border-radius: 8px;
+                width: 18px;
+                height: 18px;
+              }
+            }
+
+            .ant-checkbox-checked {
+              border-radius: 50%;
+
+              .ant-checkbox-inner {
+                background-color: #e95045;
+                border-color: #e95045;
+              }
+            }
+
+            .ant-checkbox-checked:after {
+              border-radius: 50%;
+              border-color: #e95045;
+            }
+
+            span {
+              font-size: 11px;
+              font-weight: 400;
+              color: #8b8b8d;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .more {
+    .main {
+      padding: 0 20px;
+      padding-bottom: 100px;
+      h1 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        background: #fff;
+        font-size: 16px;
+        line-height: 43px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        padding: 0px;
+        margin: 0px;
+        letter-spacing: 0.05em;
+        text-transform: capitalize;
+      }
+
+      hgroup {
+        width: 100%;
+        font-family: tungstenBook;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: #3a3a40;
+        line-height: 26px;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        margin: 0px 0px 8px;
+      }
+      hgroup:nth-of-type(1) {
+        margin-top: 65px;
+      }
+
+      .col {
+        display: flex;
+        grid-column: 3 / auto;
+        grid-template-columns: repeat(3, 1fr);
+        flex-wrap: wrap;
+        align-items: start;
+        gap: 16px;
+        margin-bottom: 40px;
+        a {
+          width: 100%;
+        }
+        aside {
+          width: 100%;
+          height: 44px;
+          background-color: #fff;
+          border-radius: 6px 6px 20px 6px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border: 1px solid #fff;
+          padding-left: 10px;
+          font-family: roobertTrialRegular;
+          font-size: 11px;
+          font-weight: 400;
+          color: #3a3a40;
+          margin-bottom: 10px;
+
+          span {
+            display: flex;
+            align-items: center;
+
+            i {
+              margin-right: 10px;
+              font-size: 20px;
+              vertical-align: top;
+            }
+            .logo {
+              i:nth-of-type(2) {
+                font-size: 2vmin;
+              }
+            }
+          }
+
+          b {
+            font-size: 14px;
+            margin-right: 20px;
+          }
+          .isShow {
+            display: block;
+          }
+        }
+
+        aside:hover {
+          border: 1px solid #e95045;
+        }
+      }
+
+      .audit {
+        aside {
+          width: 100%;
+        }
+      }
+
+      .setting {
+        article {
+          width: 100%;
+          height: 142px;
+          background-color: #fff;
+          border-radius: 6px 6px 20px 6px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border: 1px solid #fff;
+          padding-left: 10px;
+          font-family: roobertTrialRegular;
+          font-size: 11px;
+          font-weight: 400;
+          color: #3a3a40;
+
+          .left {
+            width: 50%;
+            display: flex;
+            align-items: center;
+
+            i {
+              margin-right: 10px;
+              font-size: 20px;
+              vertical-align: top;
+            }
+          }
+
+          .right {
+            width: 40%;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            figure {
+              display: flex;
+              align-items: center;
+              margin: 0;
+              margin-top: 0;
+              color: #8b8b8d;
+
+              .ant-switch {
+                width: 40px;
+                height: 26px;
+                background: #fff;
+                border: 1px solid #aba9a5;
+                margin-right: 10px;
+
+                > div {
+                  top: 3px;
+                }
+
+                > div::before {
+                  background: #3a3a40;
+                }
+              }
+
+              .ant-switch-checked {
+                background: #e95045;
+                border: 1px solid #e95045;
+              }
+            }
+
+            figcaption {
+              margin-left: 10px;
+
+              .ant-checkbox {
+                margin: 8px;
+                border-radius: 50%;
+
+                .ant-checkbox-inner {
+                  border-radius: 8px;
+                  width: 18px;
+                  height: 18px;
+                }
+              }
+
+              .ant-checkbox-checked {
+                border-radius: 50%;
+
+                .ant-checkbox-inner {
+                  background-color: #e95045;
+                  border-color: #e95045;
+                }
+              }
+
+              .ant-checkbox-checked:after {
+                border-radius: 50%;
+                border-color: #e95045;
+              }
+
+              span {
+                font-size: 11px;
+                font-weight: 400;
+                color: #8b8b8d;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

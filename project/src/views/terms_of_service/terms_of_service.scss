@@ -1,0 +1,214 @@
+.terms_of_service {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  padding: 0px 2vw;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  .nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 870px;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    i {
+      color: #e95045;
+      cursor: pointer;
+      font-style: normal;
+      font-size: 14px;
+      span {
+        margin-right: 3px;
+      }
+    }
+    h1 {
+      font-family: tungstenBook;
+      font-size: 44px;
+      font-weight: 400;
+      color: #3a3a40;
+      margin: 0;
+      letter-spacing: -0.05rem;
+      margin-top: 20px;
+    }
+  }
+  .terms_main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 870px;
+    margin-bottom: 28px;
+    overflow: auto;
+    border: 0;
+
+    .content {
+      width: 100%;
+      padding: 8px;
+      > div {
+        figure {
+          font-family: roobertTrialRegularItalic;
+          font-style: italic;
+          font-weight: 500;
+          font-size: 17px;
+          line-height: 20px;
+          color: #8b8b8d;
+          margin: 0;
+          margin-bottom: 12px;
+        }
+        figcaption {
+          font-family: roobertTrialRegular;
+          font-size: 17px;
+          font-weight: 400;
+          color: #3a3a40;
+          a {
+            color: #e95045;
+          }
+        }
+      }
+      section {
+        ol {
+          padding: 0px;
+          list-style: none;
+          counter-reset: item 0;
+          color: #3a3a40;
+          li {
+            font-family: roobertTrialRegular;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 20px;
+            margin-top: 32px;
+            counter-increment: item 1;
+            position: relative;
+            padding-left: 20px;
+            span {
+              text-decoration: underline;
+              font-weight: bold;
+              color: #3a3a40;
+            }
+            a {
+              color: #e95045;
+            }
+          }
+          li::before {
+            content: counter(item);
+            font-family: roobertTrialRegular;
+            color: #8b8b8d;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            margin-right: 5px;
+            position: absolute;
+            left: 0px;
+            top: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .terms_of_service {
+    .nav {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      border-bottom: 1px solid #dfdfdf;
+      z-index: 130;
+      background: #fff;
+      width: 100%;
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+      padding: 11px 0px;
+      i {
+        position: absolute;
+        left: 10px;
+        color: #e95045;
+        cursor: pointer;
+        font-style: normal;
+        font-size: 16px;
+        font-weight: 400;
+        span {
+          margin-right: 3px;
+        }
+      }
+      h1 {
+        font-family: industryMedium;
+        font-weight: 400;
+        font-size: 16px;
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+        color: #3a3a40;
+      }
+    }
+    .terms_main {
+      margin-bottom: 100px;
+
+      .content {
+        width: 100%;
+        padding: 8px;
+        > div {
+          margin-top: 80px;
+          figure {
+            font-size: 13px;
+            line-height: 16px;
+          }
+          figcaption {
+            font-family: roobertTrialRegular;
+            font-size: 17px;
+            font-weight: 400;
+            color: #3a3a40;
+            a {
+              color: #e95045;
+            }
+          }
+        }
+        section {
+          ol {
+            padding: 0px;
+            list-style: none;
+            counter-reset: item 0;
+            color: #3a3a40;
+            li {
+              font-size: 13px;
+              line-height: 16px;
+              margin-top: 16px;
+              span {
+                text-decoration: underline;
+                font-weight: bold;
+                color: #3a3a40;
+              }
+              a {
+                color: #e95045;
+              }
+            }
+            li::before {
+              content: counter(item);
+              font-family: roobertTrialRegular;
+              color: #8b8b8d;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 14px;
+              letter-spacing: 0.03em;
+              text-transform: uppercase;
+              margin-right: 5px;
+              position: absolute;
+              left: 0px;
+              top: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,230 @@
+.layout {
+  min-height: 98.6vh;
+  width: 100%;
+  border: 1px solid #aba9a5;
+  border-radius: 16px 16px 0 0;
+  transition: all 0.7s;
+  header {
+    background: 0;
+    width: 100%;
+    height: 56px;
+    box-sizing: border-box;
+    background: #fff;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #a19f9b4d;
+    position: relative;
+    border-radius: 16px 16px 0 0;
+    overflow: hidden;
+
+    .ant-menu {
+      color: #8b8b8d !important;
+      font-family: industryMedium;
+      background: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      .ant-menu-item {
+        min-width: 123px;
+        font-size: 1.8vmin;
+        font-style: normal;
+        font-weight: 600;
+        border-radius: 0;
+        text-align: center;
+        line-height: 56px;
+
+        .anticon {
+          vertical-align: sub;
+          .icon {
+            font-size: 20px;
+            vertical-align: middle;
+          }
+        }
+      }
+
+      // 设置菜单项鼠标滑过样式
+      .ant-menu-item-active {
+        color: #e95045 !important;
+        border-bottom: 2px solid #e95045;
+        .anticon {
+          vertical-align: sub;
+          path {
+            fill: #e95045 !important;
+          }
+        }
+      }
+
+      .ant-menu-item-selected {
+        color: #e95045 !important;
+        border-bottom: 4px solid #e95045;
+        .anticon {
+          vertical-align: sub;
+          color: #e95045 !important;
+          path {
+            fill: #e95045 !important;
+          }
+        }
+      }
+    }
+
+    .logo {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 10px;
+      left: 50px;
+      i {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 30px;
+        font-weight: bold;
+      }
+      i:nth-of-type(2) {
+        font-size: 1vmin;
+        top: 18px;
+        left: 11px;
+      }
+    }
+    .left {
+      position: absolute;
+      top: -16px;
+      left: -12px;
+      
+      svg {
+        font-size: 60px;
+      }
+      .anticon{
+        path {
+          fill: #8b8b8d !important;
+        }
+      }
+      .anticon:nth-of-type(2) {
+        margin-left: -70px;
+        path {
+          fill: #e8e7e3 !important;
+        }
+      }
+      .anticon:nth-of-type(3) {
+        position: absolute;
+        left: 6px;
+        top: 6px;
+        z-index: 1;
+        path {
+        fill: #ccc !important;
+        }
+        .icon {
+          font-size: 30px;
+        }
+      }
+    }
+    .right {
+      position: absolute;
+      top: -16px;
+      right: -16px;
+      svg {
+        font-size: 60px;
+      }
+      .anticon{
+        path {
+          fill: #8b8b8d !important;
+        }
+      }
+      .anticon:nth-of-type(2) {
+        position: absolute;
+        right: -5px;
+        top: -5px;
+        z-index: 1;
+        path {
+          fill: #e8e7e3 !important;
+        }
+      }
+      .anticon:nth-of-type(3) {
+        position: absolute;
+        right: 8px;
+        top: 6px;
+        z-index: 1;
+        path {
+        fill: #ccc !important;
+        }
+        .icon {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .layout {
+    height: 100vh;
+    width: 100vw;
+    border: 0;
+    border-radius: 0;
+    overflow: auto;
+
+    header {
+      background: #fff;
+      width: 100%;
+      height: 56px;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      border-bottom: 0;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      border-radius: 0;
+      overflow: hidden;
+
+      .ant-menu {
+        display: flex;
+        justify-content: space-between;
+
+        .ant-menu-item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 19%;
+          min-width: 0;
+          font-style: normal;
+          font-weight: 600;
+          border-radius: 0;
+          padding: 10px 0px 0 0;
+
+          .ant-menu-title-content {
+            margin: 0;
+            line-height: 34px;
+            font-size: 1.8vmin;
+          }
+
+          .ant-menu-item-icon {
+            font-size: 15px;
+          }
+        }
+
+        .ant-menu-item-active {
+          color: #e95045 !important;
+          border-bottom: 0;
+        }
+
+        .ant-menu-item-selected {
+          color: #e95045 !important;
+          border-bottom: 0;
+        }
+      }
+
+      i,
+      .left,
+      .right {
+        display: none;
+      }
+    }
+  }
+}

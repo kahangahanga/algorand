@@ -1,0 +1,200 @@
+.privacy_main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 650px;
+  margin-bottom: 28px;
+  overflow-y: auto;
+  border: 1px solid #dfdfdf;
+  .content {
+    width: 100%;
+    padding: 8px;
+    > div {
+      figure {
+        font-family: roobertTrialRegularItalic;
+        font-style: italic;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 20px;
+        color: #8b8b8d;
+        margin: 0;
+        margin-bottom: 12px;
+      }
+      p {
+        font-family: roobertTrialRegular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+        color: #3a3a40;
+        a {
+          color: #e95045;
+        }
+      }
+    }
+    section {
+      a {
+        color: #e95045;
+      }
+      h5 {
+        font-family: industryBook;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+        margin: 36px 0px 16px;
+        color: #3a3a40;
+      }
+      p {
+        font-family: roobertTrialRegular;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 20px;
+        color: #3a3a40;
+      }
+      strong {
+        font-family: roobertTrialRegular;
+        font-style: italic;
+        color: #8b8b8d;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 20px;
+      }
+      aside {
+        font-family: roobertTrialRegular;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 20px;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        border: 3px solid;
+        padding: 12px;
+        flex-wrap: wrap;
+        color: #5d5d60;
+        span {
+          width: 100%;
+        }
+      }
+      article {
+        font-family: roobertTrialRegular;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 20px;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        border: 1px solid #dfdfdf;
+        flex-wrap: wrap;
+        margin: 10px 0px;
+        padding: 24px;
+        hgroup {
+          width: 100%;
+          > div {
+            background: #ccc;
+            padding: 8px;
+            margin: 12px 0px;
+            color: #3a3a40;
+          }
+          section {
+            display: flex;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+          }
+        }
+      }
+      ul {
+        padding: 0px;
+        font-family: roobertTrialRegular;
+        color: #000;
+        li {
+          font-family: roobertTrialRegular;
+          list-style: none;
+          font-weight: 300;
+          font-size: 13px;
+          line-height: 120%;
+          letter-spacing: 0.02em;
+          padding-left: 13px;
+          position: relative;
+          margin-bottom: 5px;
+        }
+        li::before {
+          content: "";
+          display: inline-block;
+          background: #3a3a40;
+          width: 5px;
+          height: 5px;
+          border-radius: 100%;
+          position: absolute;
+          left: 0px;
+          top: 6px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .privacy_main {
+    width: 100%;
+    max-width: 342px;
+    .content {
+      width: 100%;
+      padding: 8px;
+      > div {
+        margin-top: 10px;
+        figure {
+          font-size: 13px;
+          line-height: 16px;
+        }
+        p {
+          font-size: 13px;
+          line-height: 16px;
+        }
+      }
+      section {
+        h5 {
+          font-family: roobertTrialMedium;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 17px;
+          line-height: 20px;
+        }
+        p {
+          font-size: 13px;
+          line-height: 16px;
+        }
+        strong {
+          font-size: 13px;
+          line-height: 16px;
+        }
+        aside {
+          font-size: 13px;
+          line-height: 16px;
+        }
+        ul {
+          padding: 0px;
+          list-style: none;
+          counter-reset: item 0;
+          color: #000;
+          li {
+            font-size: 13px;
+            line-height: 16px;
+            margin-top: 16px;
+            span {
+              text-decoration: underline;
+              font-weight: bold;
+              color: #3a3a40;
+            }
+            a {
+              color: #e95045;
+            }
+          }
+        }
+      }
+    }
+  }
+}
